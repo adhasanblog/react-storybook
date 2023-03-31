@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Neutral Color */
+  --neutral-black: rgba(33, 33, 33, 1);
+  --neutral-d_grey: rgba(77, 77, 77, 1);
+  --neutral-grey: rgba(113, 113, 113, 1);
+  --neutral-l_grey: rgba(137, 147, 158, 1);
+  --neutral-grey-blue: rgba(171, 190, 209, 1);
+  --neutral-silver: rgba(245, 247, 250, 1);
+  --neutral-white: rgba(255, 255, 255, 1);
+
+  /* Primary Color */
+  --primary-d_blue: rgba(0, 83, 173, 1);
+  --primary-navy: rgba(6, 99, 199, 1);
+  --primary-m_blue: rgba(6, 113, 224, 1);
+  --primary-azure: rgba(65, 150, 240, 1);
+  --primary-sky: rgba(219, 237, 255, 1);
+  --primary-l_blue: rgba(238, 245, 252, 1);
+
+  /* Success Color */
+  --success-d_green: rgba(17, 91, 67, 1);
+  --success-forest: rgba(27, 110, 83, 1);
+  --success-m_green: rgba(0, 146, 98, 1);
+  --success-herbal: rgba(50, 201, 151, 1);
+  --success-mint: rgba(132, 223, 193, 1);
+  --success-l_green: rgba(241, 251, 248, 1);
+
+  /* Warning Color */
+  --warning-d_yellow: rgba(228, 137, 0, 1);
+  --warning-lemon: rgba(255, 168, 38, 1);
+  --warning-m_yellow: rgba(255, 178, 64, 1);
+  --warning-straw: rgba(255, 198, 112, 1);
+  --warning-sand: rgba(255, 213, 150, 1);
+  --warning-l_yellow: rgba(255, 248, 236, 1);
+
+  /* Danger Color */
+  --danger-d_red: rgba(195, 48, 37, 1);
+  --danger-scarlet: rgba(224, 21, 7, 1);
+  --danger-m_red: rgba(224, 43, 29, 1);
+  --danger-raspberry: rgba(255, 90, 79, 1);
+  --danger-rubicund: rgba(240, 133, 125, 1);
+  --danger-l_red: rgba(255, 241, 240, 1);
+
+  /* Font  */
+
+  /* Headlines */
+  --headline-large-desktop: 64px;
+  --headline-normal-desktop: 36px;
+  --headline-medium-desktop: 28px;
+  --headline-small-desktop: 20px;
+
+  --headline-large-mobile: 28px;
+  --headline-normal-mobile: 20px;
+  --headline-medium-mobile: 18px;
+  --headline-small-mobile: 16px;
+
+  /* Body */
+  --body-normal-desktop: 18px;
+  --body-medium-desktop: 16px;
+  --body-small-desktop: 14px;
+
+  --body-normal-mobile: 16px;
+  --body-medium-mobile: 14px;
+  --body-small-mobile: 12px;
+
+  /* Button & Link*/
+  --action-normal: 18px;
+  --action-medium: 16px;
+  --action-small: 14px;
+
+  /* Fields */
+  --field-normal: 16px;
+  --field-small: 12px;
+}
+
+* {
+  padding: 0;
+  background-color: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+h1 {
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 272px) {
+  h1 {
+    font-family: inherit;
+    font-size: 64px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

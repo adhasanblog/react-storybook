@@ -1,0 +1,151 @@
+.btn {
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  gap: 8px;
+}
+
+.btn-icon__left {
+  flex-direction: row;
+}
+
+.btn-icon__left {
+  flex-direction: row-reverse;
+}
+
+.btn__primary {
+  color: var(--neutral-white);
+  background-color: var(--primary-m_blue);
+  border: none;
+  outline: none;
+}
+
+.btn__primary:hover {
+  background-color: var(--primary-navy);
+}
+
+.btn__primary:focus {
+  background-color: var(--primary-navy);
+  border: 2px solid var(--neutral-black);
+}
+
+.btn__primary:active {
+  border: none;
+  background-color: var(--primary-d_blue);
+}
+
+.btn__secondary {
+  color: var(--primary-m_blue);
+  background-color: var(--neutral-white);
+  border: 1px solid var(--primary-m_blue);
+  outline: none;
+}
+
+.btn__secondary:hover {
+  background-color: var(--primary-l_blue);
+}
+
+.btn__secondary:focus {
+  background-color: var(--primary-l_blue);
+  border: 2px solid var(--neutral-d_grey);
+}
+
+.btn__secondary:active {
+  border: none;
+  background-color: var(--primary-l_blue);
+}
+
+.btn__tertiary {
+  color: var(--primary-m_blue);
+  background-color: var(--netural-white);
+  border: none;
+  outline: none;
+}
+
+.btn__tertiary:hover {
+  background-color: var(--primary-l_blue);
+}
+
+.btn__tertiary:focus {
+  background-color: var(--netural-white);
+  border: 2px solid var(--neutral-d_grey);
+}
+
+.btn__tertiary:active {
+  border: none;
+  background-color: var(--primary-sky);
+}
+
+.btn__transparent {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+.btn__normal {
+  font-size: var(--action-normal);
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px 32px;
+}
+
+.btn__normal > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.btn__medium {
+  font-size: var(--action-medium);
+  font-weight: 400;
+  line-height: 20px;
+  padding: 14px 32px;
+}
+
+.btn__small {
+  font-size: var(--action-small);
+  font-weight: 400;
+  line-height: 16px;
+  padding: 8px 24px;
+}
+
+.btn__medium > svg,
+.btn__small > svg {
+  width: 16px;
+  height: 16px;
+}
+
+.btn__icon.btn__normal {
+  padding: 20px;
+}
+
+.btn__icon.btn__medium {
+  padding: 12px;
+}
+
+.btn__icon > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.btn__icon.btn__normal > svg,
+.btn__icon.btn__medium > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.btn__icon.btn__small {
+  padding: 8px;
+}
+
+.btn__icon.btn__small > svg {
+  width: 16px;
+  height: 16px;
+}
+
+.btn:disabled {
+  color: var(--neutral-grey-blue);
+  background-color: var(--primary-l_blue);
+}
