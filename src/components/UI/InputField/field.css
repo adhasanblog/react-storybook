@@ -1,3 +1,9 @@
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .field {
   font-family: inherit;
   position: relative;

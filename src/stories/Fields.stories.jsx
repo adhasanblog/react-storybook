@@ -27,3 +27,13 @@ FieldPassword.args = {
   button: true,
   icon: <EyeIcon />,
 };
+
+export const FieldLoading = Template.bind({});
+FieldLoading.args = {
+  fieldType: 'password',
+  label: 'Password',
+  placeholder: 'Text',
+  button: true,
+  icon: <EyeIcon />,
+  isLoading: true,
+};

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useRef } from 'react';
 import Button from '../Button';
 import './field.css';
+import Loading from '../Loading';
 
 const InputField = ({
   label,
@@ -9,6 +10,7 @@ const InputField = ({
   placeholder,
   button,
   icon,
+  isLoading,
   ...props
 }) => {
   const fieldContainer = useRef();
@@ -24,18 +26,21 @@ const InputField = ({
     }
   };
   return (
-    <div className="field" ref={fieldContainer}>
-      <label htmlFor={label}>{label}</label>
-      <input
-        type={fieldType}
-        id={label}
-        placeholder={placeholder}
-        onFocus={fieldFocusHandler}
-        onBlur={fieldBlurHandler}
-      />
-      {button && (
-        <Button icon={icon} onClick={() => {}} variant="transparent" />
-      )}
+    <div className="field-container">
+      <div className="field" ref={fieldContainer}>
+        <label htmlFor={label}>{label}</label>
+        <input
+          type={fieldType}
+          id={label}
+          placeholder={placeholder}
+          onFocus={fieldFocusHandler}
+          onBlur={fieldBlurHandler}
+        />
+        {button && (
+          <Button icon={icon} onClick={() => {}} variant="transparent" />
+        )}
+      </div>
+      {isLoading && <Loading label="Loading" />}
     </div>
   );
 };
@@ -47,6 +52,7 @@ InputField.propTypes = {
   button: PropTypes.bool,
   onChange: PropTypes.func,
   disabled: PropTypes.bool,
+  isLoading: PropTypes.bool,
 };
 
 InputField.defaultProps = {
@@ -56,6 +62,7 @@ InputField.defaultProps = {
   button: false,
   onChange: undefined,
   disabled: false,
+  isLoading: false,
 };
 
 export default InputField;
